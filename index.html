@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./media-query.css">
+</head>
+<body>
+    <div class="container">
+        <div class="layout">
+            <img id="symbol" src="./image/quote.png" alt="">
+            <div id="quotes"></div>
+            <div id="author"></div>
+            <!-- <button id="tweetme">linkdin</button> -->
+        </div>
+        <button id="btn" onclick="nextQuote()">Next Quote</button>
+    </div>   
+
+    <!-- <div id="quotes"></div>
+    <div id="author"></div>
+    <button id="newQ">new quotes</button>
+     <button id="tweetme">linkdin</button>
+     -->
+
+    <script>
+        const quotes=document.getElementById("quotes");
+        const author=document.getElementById("author");
+        const newQ=document.getElementById("btn");
+        const post=document.getElementById("tweetme");
+        let realData= "";
+        let quotesData="";
+        let lnkdnpost="";
+                                                   
+        const getnewQuotes=()=>{
+                                                   
+            let rnum=Math.floor(Math.random()*20);
+            quotesData=realData[rnum];
+
+           quotes.innerHTML=`${quotesData.text}`;
+           quotesData.author==null ? (author.innerHTML="unknown"):
+          author.innerHTML=`${realData[rnum].author}`;
+        };
+
+    const getQuotes=async()=>{
+        const api="https://type.fit/api/quotes";
+        try{
+          let data= await fetch(api);
+           realData= await data.json();
+          getnewQuotes();
+        }
+        catch(error){}
+    };
+
+    //  newQ.addEventListener("click",getnewQuotes);
+    getQuotes();
+
+    // const postnow=()=>{
+    //       let linkdinPost="https://www.linkedin.com/share?id=0123456789"?text=${quoteData.text};
+    //       window.open(linkdinPost);
+    // }
+    // post.addEventListener("click",postnow);
+
+    function nextQuote(){
+    getnewQuotes();
+}
+
+    </script>
+</body>
+</html>
