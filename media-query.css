@@ -1,0 +1,87 @@
+@media (min-width: 0px) and (max-width: 768px){
+    .container{
+        margin: auto;
+        width: 90%;
+        height: 50vh;
+        margin-top: 5rem;
+    }
+    
+    .layout{
+        /* border: 2px solid red; */
+        margin-left: 1.2rem;
+        margin-top: 2rem;
+        width: 90%;
+        height: 40vh;
+    }
+    #symbol{
+        height: 2rem;
+        margin-top: 1rem;
+        margin-left: -14rem;
+    }
+    
+    #quotes{
+        display: block;
+        margin-top: 1rem;
+        padding-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+    
+    #author{
+        display: block;
+        text-align: end;
+        margin-right: 1rem;
+        font-size: 0.8rem;
+    }
+    
+    #btn{
+        text-align: center;
+        margin-top: 2rem;
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+}
+
+
+/*<----------- Tablets and Ipads -----------> */
+@media (min-width: 769px) and (max-width: 1024px){
+    .container{
+        margin: auto;
+        width: 70%;
+        height: 25vh;
+        margin-top: 40%;
+    }
+    
+    .layout{
+        /* border: 2px solid red; */
+        margin-left: 2rem;
+        margin-top: 2rem;
+        width: 90%;
+        height: 15rem;
+    }
+    #symbol{
+        height: 2rem;
+        margin-top: 1rem;
+        margin-left: -10rem;
+    }
+    
+    #quotes{
+        display: block;
+        margin-top: 1rem;
+        padding-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+    
+    #author{
+        display: block;
+        text-align: end;
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+    
+    #btn{
+        text-align: center;
+        margin-top: 2.4rem;
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+}
