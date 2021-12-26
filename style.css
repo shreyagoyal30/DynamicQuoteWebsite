@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(28, 28, 29);
+}
+.container{
+    background-color: #550aae99;;
+    margin: auto;
+    height: 52vh;
+    width: 50vw;
+    margin-top: 10rem;
+    border: 1px solid rgb(70, 62, 62);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    text-align: center;
+    /* align-items: center; */
+}
+
+.layout{
+    /* border: 2px solid red; */
+    margin-left: 5rem;
+    margin-top: 2rem;
+    width: 40vw;
+    height: 40vh;
+    background-color: rgb(88 79 128);
+}
+#symbol{
+    height: 3rem;
+    margin-top: 1rem;
+    margin-left: -25rem;
+}
+
+#quotes{
+    display: block;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+}
+
+#author{
+    display: block;
+    text-align: end;
+    margin-right: 10rem;
+    font-size: 1.2rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#btn{
+    text-align: center;
+    margin-top: 1.6rem;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#btn:hover{
+    cursor: pointer;
+}
+#btn:active{
+    background-color: rgb(0, 0, 0);
+    color: rgb(125, 146, 19);
+}
